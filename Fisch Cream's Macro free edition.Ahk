@@ -46,7 +46,7 @@ If (!sub_confirmation) {
 IniWrite, 1, Settings.ini, Fisch, sub_confirmation
 
 ; Read the "Control" value from the Settings.ini (default is 0) and set it for the macro's control parameter
-IniRead, Control, Settings.ini, Fisch, Control, 0 
+IniRead, Control, Settings.ini, Fisch, Control, 0.15 
 IniWrite, %Control%, Settings.ini, Fisch, Control ; Autosave for Control
 
 ; Activate the Roblox window for the macro to work with
