@@ -10,13 +10,13 @@ If !FileExist("Settings.ini") {
 }
 IniRead, Control, Settings.ini, Fisch, Control 
 If (Control = "ERROR") {
-	IniWrite, 0.05, Settings.ini, Fisch, Control 
-	Control := "0.05"
+	IniWrite, 0.15, Settings.ini, Fisch, Control 
+	Control := "0.15"
 }
 Control := StrSplit(Control, "|")
 If (Control[2]) {
 	Msgbox The control settings are outdated.`nRestored the settings to their default values.
-	IniWrite, 0.05, Settings.ini, Fisch, Control 
+	IniWrite, 0.15, Settings.ini, Fisch, Control 
 	ExitApp
 }
 Control := Floor(96+(Control[1]*326.67)) ; calculating the catch bar size pretty pro right
