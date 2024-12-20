@@ -6,7 +6,7 @@ if (A_ScreenDPI*100//96 != 100) {
 }
 If !FileExist("Settings.ini") {
 	Msgbox,,Fisch Macro,You don't have a settings file yet. Would you like to create one? Press OK to proceed
-	IniWrite, 0.05, Settings.ini, Fisch, Control 
+	IniWrite, 0.15, Settings.ini, Fisch, Control 
 }
 IniRead, Control, Settings.ini, Fisch, Control 
 If (Control = "ERROR") {
